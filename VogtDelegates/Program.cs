@@ -8,12 +8,13 @@ namespace VogtDelegates
 {
     class Program
     {
-        #region Delegates
+        /// <summary>
+        /// Concept practice by color name to easily read
+        /// </summary>
         public delegate void DisplayRed();
         public delegate void DisplayRedString(string color);
         public delegate T DisplayChange<T>(T color);
         public delegate T DisplayChangeInt<T>(T number);
-        #endregion
 
         static void Main(string[] args)
         {
@@ -97,7 +98,5 @@ namespace VogtDelegates
             Console.ResetColor();
 
         }
-
-
     }
 }
